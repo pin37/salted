@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salted</title>
+    <link rel="stylesheet" href="/client/style.css" />
+  </head>
+  <body>
+    <h1>Salted</h1>
+    <input type="text" id="text" name="text" size="10">
+    <p class="result">Loading...</p>
+    <script>
+      function main() {
+        return fetch('/api/main.js')
+          .then(function(response) {
+            return response.text();
+          })
+          .then(function(result) {
+            document.querySelector('.result').textContent = result;
+          });
+      }
+      
+      main();
+    </script>
+  </body>
+</html>

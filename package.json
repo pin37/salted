@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.18.0"
+  },
+  "name": "salted",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pin37/salted.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pin37/salted/issues"
+  },
+  "homepage": "https://github.com/pin37/salted#readme"
+}
