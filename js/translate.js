@@ -7,9 +7,9 @@ function translate(text, toSalted) {
     for (var i = 0; i < text.length; i++) {
       const char = text.charAt(i)
       if (isVowel(char, rus)) {
-        result += char + 'с' + char
+        result += char + 'с' + char.toLowerCase()
       } else if (isVowel(char, eng)) {
-        result += char + 's' + char
+        result += char + 's' + char.toLowerCase()
       } else {
         result += char
       }
