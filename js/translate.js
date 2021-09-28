@@ -16,9 +16,9 @@ function translate(text, toSalted) {
     }
   } else {
     for (var i = 1; i < text.length - 1; i++) {
-      const char1 = text.charAt(i - 1)
-      const char2 = text.charAt(i)
-      const char3 = text.charAt(i + 1)
+      const char1 = text.charAt(i - 1).toLowerCase()
+      const char2 = text.charAt(i).toLowerCase()
+      const char3 = text.charAt(i + 1).toLowerCase()
       if (char2 === 'с') {
         if (isVowel(char1, rus) && char1 === char3) {
           text = text.substring(0, i) + text.substring(i + 2)
