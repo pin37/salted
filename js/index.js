@@ -17,6 +17,7 @@ function reverse() {
   toSalted = !toSalted
   const outputText = document.getElementById('outputText')
   inputText.value = outputText.value
+  translateClick()
 
   const inputLabel = document.getElementById('inputLabel')
   const outputLabel = document.getElementById('outputLabel')
