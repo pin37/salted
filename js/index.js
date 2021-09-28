@@ -15,6 +15,9 @@ translateButton.addEventListener('click', translateClick, false)
 
 function reverse() {
   toSalted = !toSalted
+  const outputText = document.getElementById('outputText')
+  inputText.value = outputText.value
+
   const inputLabel = document.getElementById('inputLabel')
   const outputLabel = document.getElementById('outputLabel')
   if (toSalted) {
